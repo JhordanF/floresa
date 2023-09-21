@@ -40,6 +40,12 @@
         bigButton.style.display = "none";
         document.body.style.display = "flex";
     });
+
+    // Este código se ejecuta cuando la página se carga
+    document.body.style.display = "none";
+    setTimeout(() => {
+        document.body.style.display = "flex";
+    }, 1000);
 </script>
 
 <audio id="audio" autoplay>
