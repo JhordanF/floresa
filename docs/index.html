@@ -17,25 +17,12 @@
         height: 100vh;
     }
 
-    button {
-        width: 100%;
-        height: 100%;
-        font-size: 6rem;
-        color: #fff;
-        background-color: #000;
-        cursor: pointer;
-    }
-
     .flower {
         width: 100%;
         height: 100vh;
         display: none;
     }
 </style>
-
-<button id="bigButton" class="btn btn-lg btn-block">
-    <span>Hoy no te pude llevar flores, pero te programe una flor para ti</span>
-  </button>
 
 <audio id="audio" autoplay>
     <source src="1.wav" type="audio/wav">
@@ -75,13 +62,10 @@
 
 <script>
     let audio = document.getElementById("audio");
-    let bigButton = document.getElementById("bigButton");
 
-    bigButton.addEventListener("click", function () {
+    window.onload = function () {
         audio.play();
-        bigButton.style.display = "none";
-        document.querySelector(".flower").style.display = "block";
-    });
+    };
 </script>
 
 </body>
