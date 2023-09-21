@@ -8,27 +8,10 @@
     <title>Flower</title>
 </head>
 <body>
-
-<style>
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-
-    .flower {
-        width: 100%;
-        height: 100vh;
-        display: none;
-    }
-</style>
-
-<audio id="audio" autoplay>
+  <audio id="audio" autoplay>
     <source src="1.wav" type="audio/wav">
     Tu navegador no admite el elemento de audio.
 </audio>
-
 <div class="flower">
     <div class="text-above">De Faster Academy</div>
     <div class="mid">
@@ -60,13 +43,12 @@
     <div class="text-below">Para esa persona L. </div>
   </div>
 
-<script>
+  <script>
     let audio = document.getElementById("audio");
 
     window.onload = function () {
         audio.play();
     };
 </script>
-
 </body>
 </html>
