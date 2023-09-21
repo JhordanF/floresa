@@ -78,13 +78,9 @@
     let bigButton = document.getElementById("bigButton");
 
     bigButton.addEventListener("click", function () {
-        if (audio && audio.canPlayThrough) {
-            audio.play();
-            bigButton.style.display = "none";
-            document.querySelector(".flower").style.display = "block";
-        } else {
-            console.log("El elemento de audio no existe o aún no se ha cargado");
-        }
+        audio.play();
+        bigButton.style.display = "none";
+        document.querySelector(".flower").style.display = "block";
     });
 </script>
 
