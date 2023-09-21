@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Flower</title>
@@ -45,20 +45,17 @@
     Tu navegador no admite el elemento de audio.
 </audio>
 
-<button id="audioButton">Activar Sonido</button>
+<button id="bigButton" class="btn btn-lg btn-block">
+    <span>Hoy no te pude llevar flores, pero te programe una flor para ti</span>
+</button>
 
 <script>
     let audio = document.getElementById("audio");
-    let audioButton = document.getElementById("audioButton");
+    let bigButton = document.getElementById("bigButton");
 
-    audioButton.addEventListener("click", function () {
-        if (audio.paused) {
-            audio.play();
-            audioButton.textContent = "Desactivar Sonido";
-        } else {
-            audio.pause();
-            audioButton.textContent = "Activar Sonido";
-        }
+    bigButton.addEventListener("click", function () {
+        audio.play();
+        bigButton.style.display = "none";
     });
 </script>
 
