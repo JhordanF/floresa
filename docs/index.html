@@ -38,7 +38,6 @@
     bigButton.addEventListener("click", function () {
         audio.play();
         bigButton.style.display = "none";
-        document.body.style.display = "flex";
     });
 
     // Este código se ejecuta cuando la página se carga
@@ -46,6 +45,12 @@
     setTimeout(() => {
         document.body.style.display = "flex";
     }, 1000);
+
+    // Este código se ejecuta cuando el botón se hace clic
+    document.querySelector("button").addEventListener("click", function () {
+        audio.play();
+        bigButton.style.display = "none";
+    });
 </script>
 
 <audio id="audio" autoplay>
