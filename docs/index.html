@@ -96,5 +96,22 @@
     Tu navegador no admite el elemento de audio.
 </audio>
 
+<button id="audioButton">Activar Sonido</button>
+
+<script>
+    let audio = document.getElementById("audio");
+    let audioButton = document.getElementById("audioButton");
+
+    audioButton.addEventListener("click", function () {
+        if (audio.paused) {
+            audio.play();
+            audioButton.textContent = "Desactivar Sonido";
+        } else {
+            audio.pause();
+            audioButton.textContent = "Activar Sonido";
+        }
+    });
+</script>
+
 </body>
 </html>
